@@ -1,0 +1,11 @@
+name: ClashOfCrafts
+Author: Aiden880
+version: 1
+main: net.Aiden880.ClashOfCrafts.Main
+commands:
+  coc:
+    description: Primary Clash Of Crafts command
+    usage: /coc
+  user:
+    description: Clash Of Crafts User command
+    usage: /user
