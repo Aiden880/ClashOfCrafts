@@ -26,13 +26,11 @@ public class NewUserListener implements Listener {
 		if(!userfile.exists()) {
 			try {
 				userfile.createNewFile();
-				Bukkit.broadcastMessage(e.getPlayer().getName() + " Is new! Thank fuck this plugin is working.");
+				Bukkit.broadcastMessage(ChatColor.AQUA + e.getPlayer().getName() + " is new! Welcome to Clash Of Crafts!");
 				Location location = e.getPlayer().getLocation().subtract(15, 0, 15);
-				if(!location.getBlock().getType().equals(Material.AIR)) {
 					while(!location.getBlock().getType().equals(Material.AIR)) {
 						location.add(0, 0, 1);
 					}
-				}
 					int addz1;
 					for(addz1 = 0; addz1 < 31; addz1++) {
 						location.getBlock().setType(Material.LEAVES);
